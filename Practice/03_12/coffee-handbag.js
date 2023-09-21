@@ -9,7 +9,7 @@ class CoffeeMachine {
   constructor(
     colour,
     cups,
-    coffeeForm,
+    coffeeType,
     litres,
     methodType,
     methodTexture,
@@ -17,7 +17,7 @@ class CoffeeMachine {
   ) {
     this.colour = colour;
     this.cups = cups;
-    this.coffeeForm = coffeeForm;
+    this.coffeeType = coffeeType;
     this.litres = litres;
     this.coffeeMethod = {
       type: methodType,
@@ -30,15 +30,13 @@ class CoffeeMachine {
 class Handbag {
   constructor(
     colour,
-    pattern,
     outsideZips,
     outsidePockets,
     insideZips,
     insidePockets,
-    changePattern
+    pattern
   ) {
     this.colour = colour;
-    this.pattern = pattern;
     this.outside = {
       zips: outsideZips,
       pockets: outsidePockets,
@@ -47,7 +45,7 @@ class Handbag {
       zips: insideZips,
       pockets: insidePockets,
     };
-    this.changePattern = changePattern;
+    this.pattern = pattern;
   }
   changePattern(patternType) {
     this.pattern = patternType;
